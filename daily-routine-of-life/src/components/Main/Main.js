@@ -31,7 +31,7 @@ const Main = () => {
                }
             </div>
             <div className="activity-complete">
-                <h3>Self info.</h3>
+                <h3>Self information.</h3>
             </div>
         </div>
         </div>
