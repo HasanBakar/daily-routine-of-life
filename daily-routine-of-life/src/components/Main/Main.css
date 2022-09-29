@@ -60,6 +60,7 @@
         align-items: center;
         justify-content: center;
         margin: 4px;
+        padding-left: 15px;
     }
 
     .todo-item {
@@ -104,6 +105,7 @@
         display: flex;
         margin-bottom: 6px;
         flex-direction: column;
+        padding-left: 18px;
     }
 
 
@@ -112,16 +114,26 @@
         background-color: lightgray;
         position: sticky;
         margin-top: 0;
+        padding-left: 50px;
         height: 100vh;
+    }
+
+    .top-heading {
+        padding-left: 40px;
+        display: flex;
+        align-items: center;
+        margin-left: 55px;
     }
 
     .top-heading h1 {
         font-size: 16px;
+
     }
 
     .padding-set {
         margin-top: 0;
         font-size: 13px;
+        margin-left: 55px;
     }
 
     .activity-container {
