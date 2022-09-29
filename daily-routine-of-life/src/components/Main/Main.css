@@ -6,6 +6,23 @@
 
 .top-heading {
     padding-left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.top-heading img {
+    width: 50px;
+    height: 30px;
+    padding-left: 4px;
+}
+
+.top-heading h1 {
+    margin-left: 10px;
+}
+
+.padding-set {
+    margin-top: 0;
+    padding-left: 40px;
 }
 
 .activity-container {
@@ -18,6 +35,100 @@
 }
 
 .activity-complete {
-    padding-left: 30px;
-    background-color: antiquewhite;
+    background-color: lightgray;
+    position: sticky;
+    margin-top: 0;
+    height: 100vh;
+}
+
+@media (max-width:992px) {
+    .main-container {
+        display: flex;
+        margin-bottom: 6px;
+        flex-direction: column;
+    }
+
+    .info-container {
+        margin: 104px;
+    }
+
+
+
+    .activity-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        margin: 4px;
+    }
+
+    .todo-item {
+        width: 295px;
+        height: 460px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 2px rgb(43, 44, 44);
+        position: relative;
+    }
+
+    .todo-item img {
+        width: 270px;
+        height: 190px;
+        border-radius: 4px;
+        margin: 2px;
+    }
+
+    .todo-item p>span {
+        font-weight: 400;
+    }
+
+    .btn-add {
+        width: 100%;
+        height: 45px;
+        background-color: lightskyblue;
+        border-radius: 0px 0px 15px 15px;
+        font-size: 16px;
+        font: 1em sans-serif;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .my-image {
+        width: 52px;
+        height: 61px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-container {
+        display: flex;
+        margin-bottom: 6px;
+        flex-direction: column;
+    }
+
+
+
+    .activity-complete {
+        background-color: lightgray;
+        position: sticky;
+        margin-top: 0;
+        height: 100vh;
+    }
+
+    .top-heading h1 {
+        font-size: 16px;
+    }
+
+    .padding-set {
+        margin-top: 0;
+        font-size: 13px;
+    }
+
+    .activity-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        margin: 12px;
+    }
 }
