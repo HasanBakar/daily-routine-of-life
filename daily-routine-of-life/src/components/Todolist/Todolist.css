@@ -31,3 +31,14 @@
 .btn-add:hover {
     background-color: cyan;
 }
+
+@media (max-width:576px) {
+    .todo-item {
+        width: 350px;
+        height: 516px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 2px rgb(43, 44, 44);
+        position: relative;
+        margin-left: 55px;
+    }
+}
