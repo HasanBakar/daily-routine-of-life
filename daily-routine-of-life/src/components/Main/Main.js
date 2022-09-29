@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState,useEffect } from "react";
 import Todolist from "../Todolist/Todolist";
+import Selfinfo from '../Selfinfo/Selfinfo'
 import './Main.css'
 const Main = () => {
 
@@ -15,25 +16,36 @@ const Main = () => {
     },[]);
     return (
         <div>
-             <div className="top-heading">
-                <div>
-                   <h1>Daily Routine of Life.</h1>
-                </div>
-            </div>
 
-            <div className="main-container">
-            <div className="activity-container">
-               {
-                routine.map(todo => <Todolist
-                key={todo.id}
-                todo={todo}
-                ></Todolist>)
-               }
-            </div>
-            <div className="activity-complete">
-                <h3>Self information.</h3>
-            </div>
-        </div>
+            <div>
+                   
+
+                    <div className="main-container">
+                            <div>
+                               
+                                    <div>
+                                        <div className="top-heading">
+                                            <img src="icon.png" alt="" />
+                                            <h1>Daily Routine of Life.</h1>
+                                        </div>
+                                        <h3 className='padding-set'>Select your Todo list item</h3>
+                                    </div>
+                                
+                                <div className="activity-container">
+                                    {
+                                        routine.map(todo => <Todolist
+                                        key={todo.id}
+                                        todo={todo}
+                                        ></Todolist>)
+                                     }
+                                </div>
+                            </div>
+
+                        <div className="activity-complete">
+                            <Selfinfo></Selfinfo>
+                        </div>
+                    </div>
+                </div>
         </div>
     );
 };
