@@ -1,0 +1,23 @@
+.main-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 50px;
+}
+
+.top-heading {
+    padding-left: 40px;
+}
+
+.activity-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 34px;
+    padding-left: 40px;
+    margin-top: 6px;
+    margin-bottom: 20px
+}
+
+.activity-complete {
+    padding-left: 30px;
+    background-color: antiquewhite;
+}

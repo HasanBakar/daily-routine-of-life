@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Bath Time",
+        "period": 40,
+        "img": "https://thumbs.dreamstime.com/b/s-man-sitting-bathroom-relaxing-falling-asleep-s-man-sitting-bathroom-relaxing-falling-asleep-evening-151939522.jpg",
+        "details": "My baths are the reason why my personality is so bubbly."
+    },
+    {
+        "id": 2,
+        "name": "Breakfast",
+        "period": 30,
+        "img": "https://png.pngitem.com/pimgs/s/22-229724_breakfast-food-png-transparent-png.png",
+        "details": "Breakfast shared with friends is happiness tasted and time well spent."
+    },
+    {
+        "id": 3,
+        "name": "gymnastics",
+        "period": 60,
+        "img": "https://cdn.xxl.thumbs.canstockphoto.com/confident-muscular-man-lifting-dumbbell-side-view-portrait-of-confident-muscular-man-lifting-picture_csp33221178.jpg",
+        "details": "Fitness is not about being better than someone else, it's about being better than you used to be."
+    },
+    {
+        "id": 4,
+        "name": "Study Time",
+        "period": 360,
+        "img": "https://registercents.com/wp-content/uploads/2020/07/iStock-874872024-1.jpg",
+        "details": "Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do."
+    },
+    {
+        "id": 5,
+        "name": "Sport Time",
+        "period": 50,
+        "img": "https://todayblogs.uk/wp-content/uploads/2022/01/sportsgrene-750x420-1.jpg",
+        "details": "The key is not the will to win ...everybody has that. It is the will to prepare to win that is important."
+    },
+    {
+        "id": 6,
+        "name": "Sleep Time",
+        "period": 420,
+        "img": "https://img.lovepik.com/element/40043/7263.png_300.png",
+        "details": "You know you're in love when you can't fall asleep because reality is finally better than your dreams."
+    }
+]
