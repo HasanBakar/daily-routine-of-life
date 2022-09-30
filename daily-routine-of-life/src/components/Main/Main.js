@@ -1,25 +1,15 @@
 import React from 'react';
-import { useState,useEffect } from "react";
+
 import Todolist from "../Todolist/Todolist";
 import Selfinfo from '../Selfinfo/Selfinfo'
 import './Main.css'
-const Main = () => {
-
-    const [routine, setRoutine] = useState([]);
-
-    useEffect(()=>{
-
-        fetch('fakedb.json')
-        .then(res =>res.json())
-        .then(data =>setRoutine(data))
-
-    },[]);
+const Main = (props) => {
+    const {routine} =props;
+    
     return (
         <div>
 
             <div>
-                   
-
                     <div className="main-container">
                             <div>
                                
