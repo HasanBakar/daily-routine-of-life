@@ -1,7 +1,26 @@
 import React from 'react';
 import './Selfinfo.css';
+import Swal from 'sweetalert2';
+import { useState } from "react";
 const Selfinfo = (props) => {
 const {sum}= props;
+
+const [btime, setBtime] =useState(0);
+const breakTime= {};
+const getBreak =(fieldId)=>{
+  const field =  document.getElementById(fieldId);
+  const value = field.innerText;
+  setBtime(value);
+//   let breakInfo = [];
+    breakTime[fieldId] = value;
+//   localStorage.setItem(,[...breakTime]);
+console.log(breakTime);
+}
+const completeMess=()=>{
+// console.log("hello");
+Swal.fire('Oh! Wow!! Completed your activity today!!!');
+}
+
     return (
         <div>
             <div className="top-self-info">
@@ -32,11 +51,11 @@ const {sum}= props;
                  <div>
                     <h2>Add a Break</h2>
                     <div className="break-duration">
-                        <h4>20s</h4>
-                        <h4>30s</h4>
-                        <h4>40s</h4>
-                        <h4>50s</h4>
-                        <h4>60s</h4>
+                        <button onClick={()=>getBreak('one')} id="one">20s</button>
+                        <button onClick={()=>getBreak('two')} id="two">30s</button>
+                        <button onClick={()=>getBreak('three')} id="three">40s</button>
+                        <button onClick={()=>getBreak('four')} id="four">50s</button>
+                        <button onClick={()=>getBreak('five')} id="five">60s</button>
                     </div>
                 </div>
                 <div>
@@ -45,12 +64,12 @@ const {sum}= props;
                         <h3>Total time:  {sum} minutes</h3>
                     </div>
                     <div className="break-time">
-                        <h3>Break time</h3>
+                        <h3>Break time: {btime} </h3>
                     </div>
                 </div>
 
                 <div className="complete-activity">
-                    <h2>Activity Completed</h2>
+                    <h2 onClick={completeMess}>Activity Completed</h2>
                 </div>
            </div>
         </div>

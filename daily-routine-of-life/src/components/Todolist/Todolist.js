@@ -11,7 +11,7 @@ const Todolist = (props) => {
         <div className = "todo-item">
           <div>
             <img src={img} alt="" />
-            <h1>Task Name: {name} </h1>
+            <h1>Task: {name} </h1>
             <p><span>Caption:</span> {details} </p>
             <h3>Time duration: {period} minutes. </h3>
           </div>

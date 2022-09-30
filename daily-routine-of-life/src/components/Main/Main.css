@@ -1,7 +1,7 @@
 .main-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
-    gap: 50px;
+    gap: 24px;
 }
 
 .top-heading {
@@ -28,8 +28,8 @@
 .activity-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 34px;
-    padding-left: 40px;
+    gap: 18px;
+    padding-left: 8px;
     margin-top: 6px;
     margin-bottom: 20px
 }

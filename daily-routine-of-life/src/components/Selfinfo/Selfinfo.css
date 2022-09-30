@@ -55,20 +55,22 @@
 }
 
 .break-duration {
-    display: flex;
-    column-gap: 25px;
     background-color: #f4d2aa;
-    border-radius: 20px;
+    padding: 18px 12px;
+    border-radius: 16px;
 }
 
-.break-duration h4 {
-    padding: 3px;
-    background-color: rgb(208, 229, 232);
+button {
     border-radius: 50px;
+    margin: 5px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    padding: 6px;
 }
 
-.break-duration h4:hover {
-    background-color: goldenrod;
+button:hover {
+    background-color: rgb(243, 14, 136);
 }
 
 .total-time-count {
@@ -96,34 +98,11 @@
     background-color: lawngreen;
 }
 
-@media (max-width:992px) {
-
-
-    .break-duration h4 {
-        padding: 3px;
-        margin-left: 20px;
-        background-color: rgb(208, 229, 232);
-        border-radius: 50px;
-    }
-}
-
 @media (max-width:576px) {
     .my-image {
         width: 69px;
         height: 72px;
         border-radius: 11px;
-    }
-
-    .break-duration h4 {
-        margin-left: 0 2px 0 2px;
-    }
-
-    .break-duration {
-        display: flex;
-        column-gap: 0px;
-        background-color: #f4d2aa;
-        padding-right: 33px;
-        border-radius: 20px;
     }
 
     .age-height-weight {
@@ -136,7 +115,4 @@
         line-height: 3px;
         padding: 0 12px 0 12px;
     }
-
-
-
 }
