@@ -1,6 +1,8 @@
 import React from 'react';
-import './Selfinfo.css'
-const Selfinfo = () => {
+import './Selfinfo.css';
+import { useState } from "react";
+const Selfinfo = (props) => {
+const {sum}= props;
     return (
         <div>
             <div className="top-self-info">
@@ -41,7 +43,7 @@ const Selfinfo = () => {
                 <div>
                     <h3>ToDo List details</h3>
                     <div className="total-time-count">
-                        <h3>Exercise time</h3>
+                        <h3>Exercise time {sum} </h3>
                     </div>
                     <div className="break-time">
                         <h3>Break time</h3>

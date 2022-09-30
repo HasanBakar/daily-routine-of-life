@@ -1,9 +1,12 @@
 import React from 'react';
+// import { addToHandle} from "../Utilies/Utilies";
 import './Todolist.css';
-
 const Todolist = (props) => {
-    const {name, period, img, details} =props.todo
+    const {addToHandle,todo} =props;
+    const {name, period, img, details} =todo;
     // console.log(name);
+    // const value = getValue(()=>addToHandle(period));
+   
     return (
         <div className = "todo-item">
           <div>
@@ -12,7 +15,7 @@ const Todolist = (props) => {
             <p><span>Caption:</span> {details} </p>
             <h3>Time duration: {period} minutes. </h3>
           </div>
-            <button className="btn-add">Add to list</button>
+            <button onClick={()=>addToHandle(period)} className="btn-add">Add to list</button>
         </div>
     );
 };

@@ -1,14 +1,13 @@
 import React from 'react';
-
 import Todolist from "../Todolist/Todolist";
-import Selfinfo from '../Selfinfo/Selfinfo'
+import Selfinfo from '../Selfinfo/Selfinfo';
 import './Main.css'
 const Main = (props) => {
-    const {routine} =props;
-    
+    const {routine,value,addToHandle} =props;
+    let sum = value;
+    // console.log(value);
     return (
         <div>
-
             <div>
                     <div className="main-container">
                             <div>
@@ -26,13 +25,15 @@ const Main = (props) => {
                                         routine.map(todo => <Todolist
                                         key={todo.id}
                                         todo={todo}
+                                        addToHandle={addToHandle}                                        
                                         ></Todolist>)
                                      }
                                 </div>
                             </div>
 
                         <div className="activity-complete">
-                            <Selfinfo></Selfinfo>
+                               <Selfinfo sum={sum}
+                               ></Selfinfo>
                         </div>
                     </div>
                 </div>
