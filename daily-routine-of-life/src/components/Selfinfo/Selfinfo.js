@@ -5,20 +5,21 @@ import { useState } from "react";
 const Selfinfo = (props) => {
 const {sum}= props;
 
+
 const [btime, setBtime] =useState(0);
-const breakTime= {};
+
 const getBreak =(fieldId)=>{
+    
+
   const field =  document.getElementById(fieldId);
   const value = field.innerText;
   setBtime(value);
-//   let breakInfo = [];
-    breakTime[fieldId] = value;
-//   localStorage.setItem(,[...breakTime]);
-console.log(breakTime);
 }
+
 const completeMess=()=>{
-// console.log("hello");
-Swal.fire('Oh! Wow!! Completed your activity today!!!');
+
+Swal.fire('Oh! Wow!!',' Completed your activity today!!!');
+
 }
 
     return (

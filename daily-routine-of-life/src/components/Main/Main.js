@@ -8,7 +8,7 @@ const Main = (props) => {
     // console.log(value);
     return (
         <div>
-            <div>
+            
                     <div className="main-container">
                             <div>
                                
@@ -36,7 +36,7 @@ const Main = (props) => {
                                ></Selfinfo>
                         </div>
                     </div>
-                </div>
+               
         </div>
     );
 };
