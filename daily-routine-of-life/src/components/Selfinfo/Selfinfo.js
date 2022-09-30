@@ -1,6 +1,5 @@
 import React from 'react';
 import './Selfinfo.css';
-import { useState } from "react";
 const Selfinfo = (props) => {
 const {sum}= props;
     return (
@@ -43,7 +42,7 @@ const {sum}= props;
                 <div>
                     <h3>ToDo List details</h3>
                     <div className="total-time-count">
-                        <h3>Exercise time {sum} </h3>
+                        <h3>Total time:  {sum} minutes</h3>
                     </div>
                     <div className="break-time">
                         <h3>Break time</h3>
